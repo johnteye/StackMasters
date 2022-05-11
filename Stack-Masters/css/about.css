@@ -1,0 +1,121 @@
+.aboutmain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutmain img {
+    width: 60vw;
+}
+
+.ourstory {
+    padding: 40px 20vw;
+    text-align: center;
+}
+
+.ourstory .ourstorydesc {
+    color: #fff;
+}
+
+.ourstory .ourstorydesc p {
+    margin-bottom: 40px;
+}
+
+.ourteam {
+    padding: 0px 40px;
+    margin-bottom: 60px;
+}
+
+.ourteam div {
+    margin-bottom: 20px;
+}
+
+.ourteam .teammembers {
+    display: flex;
+}
+
+.ourteam .teammem {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    align-items: center;
+    color: #fff;
+    margin: 60px 0px;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -4px 10px 50px -13px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -4px 10px 50px -13px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -4px 10px 50px -13px rgba(0, 0, 0, 1);
+}
+
+.ourteam .teammem .teammemimg {
+    text-align: center;
+    align-content: flex-start;
+}
+
+.ourteam .teammem .teammemimg img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.ourteam .teammem .teammemname {
+    color: var(--sea-blue);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.ourteam .teammem .teammemdesc {
+    margin-bottom: 20px;
+}
+
+.socialmediahandles {
+    margin-top: 40px;
+}
+
+.socialmediahandles a {
+    text-decoration: none;
+}
+
+.socialmediahandles a img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    transition: 0.2s all;
+}
+
+.socialmediahandles a img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1150px) {
+    .ourteam .teammem {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ourteam .teammem .teammemimg {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .aboutmain img {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .ourteam .teammembers {
+        flex-direction: column;
+    }
+
+    .ourteam .teammembers .teammem {
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+}
